@@ -6,6 +6,7 @@
 
 .headerImg{
     border-radius: 10px;
+    width: 100%;
 }
 
 .amper{
@@ -16,19 +17,21 @@
 
 h1{
     margin-bottom: 10px;
+    font-size: 80px;
+    font-weight: normal;
 }
 
 
 @media only screen and (max-width: 600px) {
-    .Header{
-        font-size: 40px;
-    }
-
     .amper{
         font-size: 30px;
     }
 
     .headerImg{
         border-radius: 0px;
+    }
+
+    h1{
+        font-size: 40px;
     }
 }

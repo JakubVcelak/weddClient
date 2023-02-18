@@ -26,7 +26,7 @@
 
 .timeline{
     color: #635d1a;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bolder;
     margin-bottom: 15px;
 }
@@ -54,6 +54,7 @@
 
     .timeline{
         margin-bottom: 10px;
+        font-size: 35px;
     }
 
     .timelineContainer{

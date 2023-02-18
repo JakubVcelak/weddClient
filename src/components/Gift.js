@@ -15,7 +15,6 @@ function Gift(props) {
         }
 
     }
-    //
 
     return (
         <div className="Gift">
