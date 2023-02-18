@@ -1,0 +1,33 @@
+.GiftsContainer{
+    text-align: center;
+    padding: 10px;
+}
+
+.gifts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h4{
+    font-size: 35px;
+    color: #635d1a;
+    font-weight: bolder;
+}
+
+.giftsSecondHeader{
+    padding: 5px 50px 20px 50px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .GiftsContainer{
+        padding: 5px;
+    }
+
+
+    .giftsSecondHeader{
+        padding: 5px 20px 20px 20px;
+        font-size: 18px;
+    }
+}

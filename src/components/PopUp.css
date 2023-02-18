@@ -1,0 +1,53 @@
+.popUp{
+    display: grid;
+    justify-content: center;
+}
+
+.input{
+    margin-top: 10px;
+    width: 150px;
+    outline: none;
+    box-shadow: 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding-left: 8px;
+}
+
+.close{
+    font-weight: bold;
+    font-size: 25px;
+    color: red;
+}
+
+.confirm{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.confirm:hover{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .input{
+        margin-top: 10px;
+        width: 150px;
+    }
+
+    .close{
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 28px;
+    }
+
+    .confirm{
+        margin-bottom: 15px;
+    }
+
+    .confirm:hover{
+        font-weight: normal;
+    }
+}

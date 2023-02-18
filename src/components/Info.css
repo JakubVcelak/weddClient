@@ -1,0 +1,39 @@
+.Info{
+    width: 200px;
+    padding: 5px;
+    box-shadow: 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.infoImg{
+    width: 50px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+h3{
+    font-size: 25px;
+    color: #635d1a;
+}
+
+@media only screen and (max-width: 600px) {
+    .Info{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+
+    .infoImg{
+        width: 40px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    h3{
+        font-size: 22px;
+    }
+}

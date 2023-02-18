@@ -1,0 +1,33 @@
+.ElementOfTimeline{
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 2px black;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.name{
+    width: 50%;
+    font-weight: bold;
+    text-align: left;
+}
+
+.time{
+    width: 50%;
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .ElementOfTimeline{
+        border-bottom: solid 1px black;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .name{
+        width: 80%;
+    }
+
+    .time{
+        width: 20%;
+    }
+}
