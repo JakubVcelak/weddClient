@@ -1,4 +1,4 @@
-.Gift{
+.Gift {
     width: 320px;
     padding: 5px;
     margin-left: 15px;
@@ -8,57 +8,93 @@
     border-radius: 10px;
 }
 
-.giftImg{
-    width: 150px;
+.heureka {
+    width: 20px;
+    margin-bottom: -5px;
+    margin-right: -5px;
 }
 
-h5{
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #635d1a;
-    font-size: 18px;
-}
-
-.engage{
-    margin-bottom: 10px;
-    margin-top: 10px;
+.linkGift {
+    cursor: pointer;
+    font-weight: bolder;
     box-shadow: 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    background: white;
+    color: #009bd2;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.cost {
+    color: black;
+    font-weight: normal;
+}
+
+.giftImg {
+    width: 150px;
+    margin-top: 10px;
+}
+
+h5 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--main-color);
+    font-size: 18px;
+}
+
+.engage {
+    margin-bottom: 10px;
+    margin-top: 15px;
+    box-shadow: 0 0 0 2px var(--secondary-color),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    color: white;
     cursor: pointer;
     font-size: 18px;
 }
 
-.engage:hover{
+.engage:hover {
     font-weight: bold;
 }
 
-.center{
+.center {
     justify-content: center;
     display: grid;
 }
 
 @media only screen and (max-width: 600px) {
-    .Gift{
+    .Gift {
         margin-left: 0px;
     }
 
-    .giftImg{
+    .giftImg {
         width: 120px;
     }
 
-    h5{
+    h5 {
         margin-bottom: 5px;
         font-size: 16px;
     }
 
-    .engage{
+    .engage {
         margin-bottom: 15px;
         margin-top: 15px;
     }
 
-    .engage:hover{
+    .engage:hover {
         font-weight: normal;
+    }
+
+    .heureka {
+        width: 18px;
+        margin-bottom: -4px;
+        margin-right: -5px;
+    }
+
+    .linkGift {
+        font-weight: bolder;
+        font-size: 15px;
+        margin-top: 5px;
     }
 }

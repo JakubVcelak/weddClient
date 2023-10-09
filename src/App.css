@@ -8,9 +8,24 @@
     margin-right: 20%;
 }
 
+
+@media only screen and (max-width: 1600px) {
+    .App{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .App{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .App{
-        margin-left: 0%;
-        margin-right: 0%;
+        margin-left: 0;
+        margin-right: 0;
     }
 }

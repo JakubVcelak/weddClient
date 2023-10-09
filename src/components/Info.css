@@ -17,7 +17,7 @@
 
 h3{
     font-size: 25px;
-    color: #635d1a;
+    color: var(--main-color);
 }
 
 @media only screen and (max-width: 600px) {
@@ -25,6 +25,7 @@ h3{
         margin-left: 10px;
         margin-right: 10px;
         margin-bottom: 15px;
+        width: 90%;
     }
 
     .infoImg{

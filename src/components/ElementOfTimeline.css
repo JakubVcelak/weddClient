@@ -1,7 +1,7 @@
 .ElementOfTimeline{
     display: flex;
     justify-content: center;
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px var(--secondary-color);
     margin-bottom: 20px;
     font-size: 20px;
 }
@@ -19,7 +19,7 @@
 
 @media only screen and (max-width: 600px) {
     .ElementOfTimeline{
-        border-bottom: solid 1px black;
+        border-bottom: solid 1px var(--secondary-color);
         margin-bottom: 10px;
         font-size: 20px;
     }

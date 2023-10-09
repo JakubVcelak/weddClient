@@ -1,64 +1,265 @@
-.InfoContainer{
+.InfoContainer {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
-.verseContainer{
-    padding: 20px 50px 20px 50px;
+.verseContainer {
+    padding: 0 200px 40px 200px;
     font-size: 22px;
+    transition-property: padding-left, padding-right, padding-bottom, font-size;
+    transition-timing-function: ease-in-out;
 }
 
-.link{
-    color: #635d1a;
+.transformedVerse {
+    padding-bottom: 100%;
+    transition-property: padding-bottom;
+    transition-timing-function: ease-in-out;
+}
+
+.link {
+    color: var(--main-color);
     font-weight: bold;
 }
 
-.welcomeContainer{
-    padding: 20px 50px 40px 50px;
+.bible {
+    width: 40px;
+    margin-top: 30px;
+}
+
+.heart {
+    width: 40px;
+    margin-top: 30px;
+}
+
+.questionMark {
+    width: 50px;
+    margin-top: 30px;
+}
+
+.welcomeContainer {
+    padding: 0 200px 40px 200px;
     font-size: 22px;
 }
 
-.infos{
+.transformedWelcome {
+    padding-bottom: 50%;
+    transition-property: padding-bottom;
+    transition-timing-function: ease-in-out;
+}
+
+.infos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 15px;
 }
 
-.timeline{
-    color: #635d1a;
+.infosContainer {
+    padding-bottom: 0;
+    transition-property: padding-bottom;
+    transition-timing-function: ease-in-out;
+}
+
+.transformedInfos {
+    padding-bottom: 50%;
+    transition-property: padding-bottom;
+    transition-timing-function: ease-in-out;
+}
+
+.timeline {
+    color: var(--main-color);
     font-size: 40px;
     font-weight: bolder;
     margin-bottom: 15px;
 }
 
-.timelineContainer{
-    margin: 20px 20% 20px 20%;
+.timelineContainer {
+    margin: 60px 20% 60px 20%;
     justify-content: center;
+    transition-property: margin-bottom;
+    transition-timing-function: ease-in-out;
+}
+
+.transformedTimeline {
+    margin-bottom: 50%;
+    transition-property: margin-bottom;
+    transition-timing-function: ease-in-out;
+}
+
+@media only screen and (max-width: 1600px) {
+    .InfoContainer {
+        padding-top: 10px;
+    }
+
+    .verseContainer {
+        padding: 0 20px 40px 20px;
+        font-size: 20px;
+    }
+
+
+    .bible {
+        width: 35px;
+        margin-top: 30px;
+    }
+
+    .heart {
+        width: 35px;
+        margin-top: 0;
+    }
+
+    .questionMark {
+        width: 50px;
+        margin-top: 5px;
+    }
+
+    .welcomeContainer {
+        padding: 0 40px 40px 40px;
+        font-size: 20px;
+    }
+
+
+    .infos {
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+
+    .timeline {
+        color: var(--main-color);
+        font-size: 35px;
+        font-weight: bolder;
+        margin-bottom: 15px;
+    }
+
+    .timelineContainer {
+        margin: 30px 5% 40px 5%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .verseContainer {
+        padding: 0 20px 40px 20px;
+        font-size: 20px;
+    }
+
+    .transformedVerse {
+        padding-bottom: 40px;
+        transition-property: padding-bottom;
+        transition-timing-function: ease-in-out;
+    }
+
+    .welcomeContainer {
+        padding: 0 40px 40px 40px;
+        font-size: 20px;
+    }
+
+    .transformedWelcome {
+        padding-bottom: 40px;
+        transition-property: padding-bottom;
+        transition-timing-function: ease-in-out;
+    }
+
+    .transformedInfos {
+        padding-bottom: 0%;
+        transition-property: padding-bottom;
+        transition-timing-function: ease-in-out;
+    }
+
+    .timelineContainer {
+        margin: 30px 5% 40px 5%;
+        justify-content: center;
+    }
+
+    .transformedTimeline {
+        margin-bottom: 0;
+        transition-property: margin-bottom;
+        transition-timing-function: ease-in-out;
+    }
+
 }
 
 
 @media only screen and (max-width: 600px) {
-    .InfoContainer{
-        padding-top: 0px;
+    .InfoContainer {
+        padding-top: 10px;
     }
 
-    .verseContainer{
-        padding: 10px 10px 20px 10px;
-        font-size: 18px;
+    .verseContainer {
+        padding: 0 2% 40px 2%;
+        font-size: 20px;
     }
 
-    .welcomeContainer{
-        padding: 0px 10px 20px 10px;
-        font-size: 18px;
+    .transformedVerse {
+        padding-bottom: 100%;
+        transition-property: padding-bottom;
+        transition-timing-function: ease-in-out;
     }
 
-    .timeline{
-        margin-bottom: 10px;
+    .bible {
+        width: 35px;
+        margin-top: 30px;
+    }
+
+    .heart {
+        width: 35px;
+        margin-top: 0;
+    }
+
+    .questionMark {
+        width: 50px;
+        margin-top: 5px;
+    }
+
+    .welcomeContainer {
+        padding: 0 2% 40px 2%;
+        font-size: 20px;
+        transition-property: padding-bottom;
+        transition-timing-function: ease-in-out;
+    }
+
+
+    .transformedWelcome {
+        padding-bottom: 100%;
+        transition-property: padding-bottom;
+        transition-timing-function: ease-in-out;
+    }
+
+    .infos {
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    .infosContainer {
+        padding-bottom: 0;
+        transition-property: padding-bottom;
+        transition-timing-function: ease-in-out;
+    }
+
+    .transformedInfos {
+        padding-bottom: 100%;
+        transition-property: padding-bottom;
+        transition-timing-function: ease-in-out;
+    }
+
+    .timeline {
+        color: var(--main-color);
         font-size: 35px;
+        font-weight: bolder;
+        margin-bottom: 15px;
     }
 
-    .timelineContainer{
-        margin: 20px 20px 20px 20px;
+    .timelineContainer {
+        margin: 30px 3% 40px 3%;
         justify-content: center;
+        transition-property: padding-bottom;
+        transition-timing-function: ease-in-out;
+    }
+
+
+    .transformedTimeline {
+        margin-bottom: 100%;
+        transition-property: margin-bottom;
+        transition-timing-function: ease-in-out;
     }
 }

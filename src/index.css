@@ -5,7 +5,7 @@
 }
 
 body {
-  margin: 0;
+  margin-top: 0;
   font-family: 'Nunito', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,3 +16,7 @@ code {
   monospace;
 }
 
+:root{
+  --main-color: #C39F5B;
+  --secondary-color: #7DAD93;
+}

@@ -1,37 +1,81 @@
-.GiftsContainer{
+.GiftsContainer {
     text-align: center;
-    padding: 10px;
 }
 
-.gifts{
+.gifts {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    transition-property: padding-bottom;
+    transition-timing-function: ease-in-out;
 }
 
-h4{
+.transformedGifts {
+    padding-bottom: 50%;
+    transition-property: padding-bottom;
+    transition-timing-function: ease-in-out;
+}
+
+h4 {
     font-size: 40px;
-    color: #635d1a;
+    color: var(--main-color);
     font-weight: bolder;
 }
 
-.giftsSecondHeader{
-    padding: 5px 50px 20px 50px;
+.giftsSecondHeader {
+    padding: 5px 200px 30px 200px;
     font-size: 20px;
 }
 
-@media only screen and (max-width: 600px) {
-    .GiftsContainer{
+.outOfGifts {
+    color: var(--secondary-color);
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1600px) {
+    .GiftsContainer {
         padding: 5px;
     }
 
-
-    .giftsSecondHeader{
-        padding: 5px 20px 20px 20px;
+    .giftsSecondHeader {
+        padding: 5px 40px 20px 40px;
         font-size: 18px;
     }
 
-    h4{
+    h4 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+     .transformedGifts {
+        padding-bottom: 0;
+        transition-property: padding-bottom;
+        transition-timing-function: ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .GiftsContainer {
+        transition-property: padding-bottom;
+        transition-timing-function: ease-in-out;
+    }
+
+    .transformedGifts {
+        padding-bottom: 100%;
+        transition-property: padding-bottom;
+        transition-timing-function: ease-in-out;
+    }
+
+
+    .giftsSecondHeader {
+        padding: 5px 2% 20px 2%;
+        font-size: 18px;
+    }
+
+    h4 {
         font-size: 35px;
     }
 }

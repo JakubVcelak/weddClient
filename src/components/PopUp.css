@@ -1,9 +1,10 @@
-.popUp{
+.popUp {
     display: grid;
     justify-content: center;
+    margin-top: 25px;
 }
 
-.input{
+.input {
     margin-top: 10px;
     width: 150px;
     outline: none;
@@ -15,46 +16,56 @@
     font-size: 18px;
 }
 
-.close{
+.close {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
+    line-height: 25px;
     color: red;
     background: white;
     cursor: pointer;
-}
-
-.confirm{
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin: 5px 60px 5px 60px;
     box-shadow: 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+}
+
+.confirm {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 0 2px var(--secondary-color),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    background: white;
+    background: var(--secondary-color);
+    color: white;
     cursor: pointer;
     font-size: 18px;
 }
 
-.confirm:hover{
+.confirm:hover {
     font-weight: bold;
 }
 
 @media only screen and (max-width: 600px) {
-    .input{
-        margin-top: 10px;
+    .popUp {
+        margin-top: 15px;
+    }
+
+    .input {
+        margin-top: 15px;
         width: 150px;
     }
 
-    .close{
+    .close {
         font-weight: bold;
         font-size: 25px;
         line-height: 28px;
     }
 
-    .confirm{
-        margin-bottom: 15px;
+    .confirm {
+        margin-bottom: 30px;
     }
 
-    .confirm:hover{
+    .confirm:hover {
         font-weight: normal;
     }
 }
