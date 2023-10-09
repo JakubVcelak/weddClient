@@ -12,6 +12,7 @@ import questionMark from "../res/questionMark.png"
 import {Offset} from "../App";
 import mobile from "../res/main.jpg";
 
+
 function InfoContainer(props) {
 
     const {offset, setOffset} = useContext(Offset)
