@@ -9,7 +9,7 @@ function GiftsContainer(props) {
     const {gifts, setGifts} = useContext(Gifts)
 
     useEffect(() => {
-         axios.get("https://vast-cyan-dog.cyclic.cloud/gifts")
+         axios.get("https://wed-server.vercel.app/")
                 .then((response) => {
                     if(response.data === ""){
                         return
