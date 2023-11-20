@@ -14,7 +14,7 @@ function PopUp(props) {
         if (firstName === "" || secondName === "")
             return
         props.toggle()
-        axios.post("https://vast-cyan-dog.cyclic.cloud/addOrder", {
+        axios.post("https://wed-server.vercel.app/addOrder", {
             product: props.nameOfItem,
             firstName: firstName,
             secondName: secondName
