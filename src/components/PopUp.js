@@ -8,7 +8,7 @@ function PopUp(props) {
     const [firstName, setFirstName] = useState("")
     const [secondName, setSecondName] = useState("")
 
-    const {gifts, setGifts} = useContext(Gifts)
+    const {setGifts} = useContext(Gifts)
 
     function submit() {
         if (firstName === "" || secondName === "")
@@ -23,8 +23,6 @@ function PopUp(props) {
                     return
                 }
                 setGifts(response.data.filter((g) => g.product !== props.nameOfItem.toString()))
-            }, (error) => {
-                console.log(error)
             }, (error) => {
                 console.log(error)
             });

@@ -25,7 +25,7 @@
     cursor: pointer;
     margin: 5px 60px 5px 60px;
     box-shadow: 0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    0.2em 0.2em 0.5em rgba(0, 0, 0, 0.3);
     border-radius: 100%;
 }
 

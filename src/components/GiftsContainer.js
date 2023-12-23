@@ -7,6 +7,8 @@ import {Gifts} from "../App";
 function GiftsContainer(props) {
 
     const {gifts, setGifts} = useContext(Gifts)
+    const [giftsVisibility, setGiftsVisibility] = useState(false);
+    const [giftsBtn, setGiftsBtn] = useState("Ukázat dary");
 
     useEffect(() => {
          axios.get("https://wed-server.vercel.app/gifts")
@@ -27,6 +29,15 @@ function GiftsContainer(props) {
             return <p className="outOfGifts">Vše zarezervováno...</p>
        return gif.map(g=><Gift key={g._id} id={g._id} name={g.product} img={g.imgUrl} cena={g.cost} url={g.shopUrl}/>)
     }
+    
+    function handleGiftsVisibility() {
+        setGiftsVisibility(!giftsVisibility)
+        if (giftsBtn === "Ukázat dary"){
+            setGiftsBtn("Skrýt dary")
+            return
+        }
+        setGiftsBtn("Ukázat dary")
+    }
 
     return (
         <div className="GiftsContainer">
@@ -35,9 +46,11 @@ function GiftsContainer(props) {
                 Nullam sapien sem, ornare ac, nonummy non, lobortis a enim.
                 Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Duis pulvinar.
             </p>
-            <div className="gifts">
+            <button className="showGifts" onClick={handleGiftsVisibility}>{giftsBtn}</button>
+            {giftsVisibility?<div className="gifts">
                 {rederGifts(gifts)}
-            </div>
+            </div>:""}
+
         </div>
     );
 }
