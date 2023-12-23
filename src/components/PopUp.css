@@ -1,29 +1,29 @@
 .popUp {
     display: grid;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .input {
     margin-top: 10px;
-    width: 150px;
+    width: 200px;
     outline: none;
     background: white;
     box-shadow: 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     padding-left: 8px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .close {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 25px;
     color: red;
     background: white;
     cursor: pointer;
-    margin: 5px 60px 5px 60px;
+    margin: 5px auto 10px auto;
     box-shadow: 0 0 0 2px rgb(255, 255, 255),
     0.2em 0.2em 0.5em rgba(0, 0, 0, 0.3);
     border-radius: 100%;
@@ -38,7 +38,7 @@
     background: var(--secondary-color);
     color: white;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .confirm:hover {
@@ -52,13 +52,13 @@
 
     .input {
         margin-top: 15px;
-        width: 150px;
+        width: 200px;
     }
 
     .close {
         font-weight: bold;
-        font-size: 25px;
-        line-height: 28px;
+        font-size: 22px;
+        line-height: 22px;
     }
 
     .confirm {

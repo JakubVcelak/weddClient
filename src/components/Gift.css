@@ -1,5 +1,6 @@
 .Gift {
     width: 320px;
+    height: 320px;
     padding: 5px;
     margin-left: 15px;
     margin-bottom: 15px;
@@ -8,38 +9,45 @@
     border-radius: 10px;
 }
 
-.heureka {
-    width: 20px;
-    margin-bottom: -5px;
-    margin-right: -5px;
-}
-
 .linkGift {
     cursor: pointer;
-    font-weight: bolder;
     box-shadow: 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    color: #009bd2;
     text-decoration: none;
-    margin-top: 5px;
+    padding: 2px 10px 2px 10px;
+    margin-right: 20px;
+    font-weight: bold;
+    color: var(--secondary-color);
 }
 
-.cost {
-    color: black;
-    font-weight: normal;
+.imgContainer{
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .giftImg {
     width: 150px;
-    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    max-height: 180px;
+}
+
+.headerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60px;
 }
 
 h5 {
     margin-bottom: 10px;
+    margin-top: 15px;
     font-weight: bold;
     color: var(--main-color);
-    font-size: 18px;
+    font-size: 21px;
 }
 
 .engage {
@@ -51,7 +59,8 @@ h5 {
     background-color: var(--secondary-color);
     color: white;
     cursor: pointer;
-    font-size: 18px;
+    padding: 4px 25px 4px 25px;
+    font-size: 20px;
 }
 
 .engage:hover {
@@ -65,36 +74,42 @@ h5 {
 
 @media only screen and (max-width: 600px) {
     .Gift {
-        margin-left: 0px;
+        margin-left: 0;
+        height: 270px;
     }
 
     .giftImg {
         width: 120px;
+        max-height: 150px;
     }
 
     h5 {
         margin-bottom: 5px;
         font-size: 16px;
+        margin-top: 5px;
     }
 
     .engage {
         margin-bottom: 15px;
         margin-top: 15px;
+        font-size: 18px;
+    }
+
+    .headerContainer{
+        height: 45px;
+    }
+
+    .imgContainer{
+        height: 150px;
     }
 
     .engage:hover {
         font-weight: normal;
     }
 
-    .heureka {
-        width: 18px;
-        margin-bottom: -4px;
-        margin-right: -5px;
-    }
-
     .linkGift {
         font-weight: bolder;
-        font-size: 15px;
+        font-size: 14px;
         margin-top: 5px;
     }
 }
